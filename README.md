@@ -1,2 +1,0 @@
-# ENCE_3231_Charlie_Shields_2026
-# ENCE_3231_Charlie_Shields_2026
