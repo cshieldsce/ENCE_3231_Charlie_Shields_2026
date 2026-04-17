@@ -4,20 +4,9 @@
 **Course:** ENCE 3231: Embedded Systems
 **Year:** 2026
 
-## Building / Importing
-
-This is an STM32CubeIDE project (`Week3_Class1_Timer1_Pulse/`). Build artifacts (`Debug/`, `*.elf`, `*.o`, …) are gitignored and regenerated on import.
-
-1. Clone the repo.
-2. In STM32CubeIDE: **File → Import → Existing Projects into Workspace**, point at `lab1/Week3_Class1_Timer1_Pulse/`.
-3. Right-click the project → **Build Project** (regenerates `Debug/`).
-4. **Run → Debug As → STM32 C/C++ Application** to flash + open the live-expression view.
-
-Target MCU: **STM32F407VG**. If you re-generate code from the `.ioc`, leave the timer settings below unchanged.
-
 ## Goal
 
-Interface an HC-SR04 ultrasonic sensor to an STM32 using **only timer functionalities** (no delay loops, no blocking code). The trigger pulse, measurement cycle, and echo capture are all driven by hardware timers and their interrupts. The measured range counter and the computed distance (cm) are observed through the debug window / live expression visualizer.
+Interface an HC-SR04 ultrasonic sensor to an STM32 using **only timer functionalities** . The trigger pulse, measurement cycle, and echo capture are all driven by hardware timers and their interrupts. 
 
 ## Block Diagram
 
@@ -25,7 +14,7 @@ Interface an HC-SR04 ultrasonic sensor to an STM32 using **only timer functional
 
 ## Timer Configuration
 
-### TIM1 — 60 ms Measurement-Cycle Tick
+### TIM1: 60 ms Measurement-Cycle Tick
 
 | Field         | Value      | Reason                                        |
 |---------------|------------|-----------------------------------------------|
@@ -33,7 +22,7 @@ Interface an HC-SR04 ultrasonic sensor to an STM32 using **only timer functional
 | Counter Period| `65536 - 1`| ~65.5 ms update event → gates each ping ≥60 ms|
 | Mode          | Interrupt  | `HAL_TIM_PeriodElapsedCallback` retriggers TIM2 |
 
-### TIM2 — 10 µs TRIG Pulse (PWM, one-shot-style)
+### TIM2: 10 µs TRIG Pulse (PWM, one-shot-style)
 
 | Field         | Value        | Reason                                     |
 |---------------|--------------|--------------------------------------------|
@@ -43,7 +32,7 @@ Interface an HC-SR04 ultrasonic sensor to an STM32 using **only timer functional
 | Pulse (CCR1)  | `10`         | 10 counts × 1 µs = **10 µs high time**     |
 
 
-### Scope Capture — 10 µs TRIG Pulse
+### Scope Capture: 10 µs TRIG Pulse
 
 Measured on the TIM2 CH1 output pin (PA5).
 
