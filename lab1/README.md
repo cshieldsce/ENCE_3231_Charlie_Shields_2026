@@ -19,7 +19,7 @@ Interface an HC-SR04 ultrasonic sensor to an STM32 using **only timer functional
 | Field         | Value      | Reason                                        |
 |---------------|------------|-----------------------------------------------|
 | Prescaler     | `84 - 1`   | 84 MHz / 84 = 1 MHz (1 µs tick)               |
-| Counter Period| `65536 - 1`| ~65.5 ms update event → gates each ping ≥60 ms|
+| Counter Period| `65536 - 1`| each ping ≥60 ms|
 | Mode          | Interrupt  | `HAL_TIM_PeriodElapsedCallback` retriggers TIM2 |
 
 ### TIM2: 10 µs TRIG Pulse (PWM, one-shot-style)
@@ -27,7 +27,7 @@ Interface an HC-SR04 ultrasonic sensor to an STM32 using **only timer functional
 | Field         | Value        | Reason                                     |
 |---------------|--------------|--------------------------------------------|
 | Prescaler     | `84 - 1`     | 1 MHz counter                              |
-| Counter Period| `100000 - 1` | 100 ms frame (irrelevant once one-shot)    |
+| Counter Period| `100000 - 1` | 100 ms frame (one-shot)    |
 | Channel       | CH1 PWM out  | Drives HC-SR04 `TRIG` pin                  |
 | Pulse (CCR1)  | `10`         | 10 counts × 1 µs = **10 µs high time**     |
 
