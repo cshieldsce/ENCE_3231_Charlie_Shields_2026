@@ -1,0 +1,1 @@
+![Schematic](docs/schematic_guide-1.png)
