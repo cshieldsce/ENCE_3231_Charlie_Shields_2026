@@ -1,0 +1,13 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "WE-SL5_HC")(type "KiCad")(uri "${KIPRJMOD}/components/WE-SL5_HC")(options "")(descr ""))
+  (lib (name "USB4110GFA")(type "KiCad")(uri "${KIPRJMOD}/components/USB4110GFA")(options "")(descr ""))
+  (lib (name "SMAJ5.0A")(type "KiCad")(uri "${KIPRJMOD}/components/SMAJ5.0A")(options "")(descr ""))
+  (lib (name "PTS525SM15SMTR2LFS")(type "KiCad")(uri "${KIPRJMOD}/components/PTS525SM15SMTR2LFS")(options "")(descr ""))
+  (lib (name "MF-MSMF050-2")(type "KiCad")(uri "${KIPRJMOD}/components/MF-MSMF050-2")(options "")(descr ""))
+  (lib (name "L77SDE09SA4CH4F")(type "KiCad")(uri "${KIPRJMOD}/components/L77SDE09SA4CH4F")(options "")(descr ""))
+  (lib (name "ISOW1044BDFMR")(type "KiCad")(uri "${KIPRJMOD}/components/ISOW1044BDFMR")(options "")(descr ""))
+  (lib (name "ESD2CAN24DBZRQ1")(type "KiCad")(uri "${KIPRJMOD}/components/ESD2CAN24DBZRQ1")(options "")(descr ""))
+  (lib (name "ABM8-24.000MHZ-B2-T")(type "KiCad")(uri "${KIPRJMOD}/components/ABM8-24.000MHZ-B2-T")(options "")(descr ""))
+  (lib (name "USB4105-GF-A")(type "KiCad")(uri "${KIPRJMOD}/components/USB4105-GF-A")(options "")(descr ""))
+)
