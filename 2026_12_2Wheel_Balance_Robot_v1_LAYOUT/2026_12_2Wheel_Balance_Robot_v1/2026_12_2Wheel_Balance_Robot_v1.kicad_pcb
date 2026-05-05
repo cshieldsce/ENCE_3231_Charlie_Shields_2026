@@ -16201,8 +16201,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Charlie Shields\nENCE-3231 Spring 2026"
-		(at 165.8209 66.3668 0)
+	(gr_text "2 Wheel Robot\nCharlie Shields\nENCE-3231 Spring 2026"
+		(at 165.9709 66.6168 0)
 		(layer "B.SilkS")
 		(uuid "e118bdf4-59a4-4b75-b6f3-6f67d852112f")
 		(effects
