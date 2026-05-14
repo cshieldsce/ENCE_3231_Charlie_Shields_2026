@@ -36,5 +36,21 @@ local.properties
 Thumbs.db
 *.swp
 *~
+.history/
 .vscode/
 .idea/
+
+# ---- KiCad generated files ----
+# Lock files (appear when a project is open)
+*.lck
+~*.lck
+
+# Local per-user project state (not useful for sharing)
+*.kicad_prl
+
+# Footprint cache
+fp-info-cache
+
+# Project backups (often large zips)
+*-backups/
+*-backups/*.zip
